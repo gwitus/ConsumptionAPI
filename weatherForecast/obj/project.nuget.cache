@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dBdsHSnp/LknPIdcMwAC1TC3z/Wvi+FsP5kibgq+D5DrH+cb14tcT5rbyPhRScS45QV0Vk1aeRo2SUiDX0V7JA==",
+  "dgSpecHash": "J1FBSJbmhNuZaxsK781rhp0xUZkO09y1SCNCKfXvCEFC3ya9fAIPhkmiNHRA9m5MUcDh+iIE6yQmQRrNsvkM8Q==",
   "success": true,
-  "projectFilePath": "c:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\weatherForecast.csproj",
+  "projectFilePath": "C:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\weatherForecast.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emanu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

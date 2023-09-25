@@ -19,11 +19,11 @@ namespace weatherForecast.Entities.services
         // Estou buscando do tipo Weather
 
         // Estrutura básica da Task - modificador | parametro | se é uma tarefa | tipo | nome | atributo (parametro)
-        public async Task<Weather> SearchOnApi (String city){
+        public async Task<Weather> SearchOnApi (){
             // Classe especial utilizado para fazer as requisições
             HttpClient clienteHttp = new();
             // Método para receber o endereço da API e buscar os valores
-            var response = await clienteHttp.GetAsync("https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=68lgqLczU1IMctZwYDlh5Yyl0PIENZbY");
+            var response = await clienteHttp.GetAsync("https://api.tomorrow.io/v4/weather/forecast?location=new%20york&apikey=68lgqLczU1IMctZwYDlh5Yyl0PIENZbY");
             // Vai esperar o conteudo da linha acima e ler como string
             var jsonString = await response.Content.ReadAsStringAsync();
             
@@ -35,11 +35,9 @@ namespace weatherForecast.Entities.services
 
 
             // Hora de tratar possíveis exceções, como por exemplo o json estar vazio
-            if (jsonObject != null){
-                return jsonObject;
-            } else {
-                Console.WriteLine("Corno encontrado!");
-            }
+            // if (jsonObject != null){
+            //     return jsonObject;
+            // } 
 
             return jsonObject;
         }

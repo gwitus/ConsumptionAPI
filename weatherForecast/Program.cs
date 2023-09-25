@@ -7,23 +7,12 @@ namespace Principal {
     class Exe 
     {
         static async Task Main (){
-            SearchCity();
-        }
-
-        static async void SearchCity(){
-            // Pegando cidade
-            Console.WriteLine("Write a city in English: ");
-            string read = Console.ReadLine();
-            string engine = read.Trim();
-
             // Precisa instanciar o service primeiro e depois na classe só de objetos chamar ela com await
             ServicesForeCast partOfService = new();
             // Esperar na api buscar a informação passada
-            Weather search = await partOfService.SearchOnApi(engine);
-
-            Console.WriteLine(search.city);
-            Console.WriteLine(search.damp);
-            Console.WriteLine(search.temperatureInCelsius);
+            Weather search = await partOfService.SearchOnApi();
+            Console.WriteLine($"Nome da Localização: {search.Location.Name}");
         }
+        // static async void SearchCity(){}
     }
 }
