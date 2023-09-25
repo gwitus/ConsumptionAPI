@@ -1,0 +1,17 @@
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\weatherForecast.csproj.AssemblyReference.cache
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\weatherForecast.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\weatherForecast.AssemblyInfoInputs.cache
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\weatherForecast.AssemblyInfo.cs
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\weatherForecast.csproj.CoreCompileInputs.cache
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\bin\Debug\net6.0\weatherForecast.exe
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\bin\Debug\net6.0\weatherForecast.deps.json
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\bin\Debug\net6.0\weatherForecast.runtimeconfig.json
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\bin\Debug\net6.0\weatherForecast.dll
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\bin\Debug\net6.0\weatherForecast.pdb
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\weatherForecast.csproj.CopyComplete
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\weatherForecast.dll
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\refint\weatherForecast.dll
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\weatherForecast.pdb
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\weatherForecast.genruntimeconfig.cache
+C:\Git\GitHub\ConsumptionAPI\weatherForecast\obj\Debug\net6.0\ref\weatherForecast.dll
