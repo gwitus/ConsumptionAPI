@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 namespace weatherForecast.Entities
 {
     public class Weather {
+        // Tava dando com types primitivos, então utilizando jsonProperty funcinou
         [JsonProperty("location")]
         public Location Location { get; set; }
         // umidade
