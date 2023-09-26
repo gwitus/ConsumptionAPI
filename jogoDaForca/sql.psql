@@ -1,0 +1,8 @@
+-- Select all
+select * from jogadores;
+
+-- Insert de jogador pelo indice
+-- OBS: Graças a Deus isso aqui serve para fazer conta
+INSERT INTO jogadores(id, nome, placarmax) values (1 + 1, 'TESTE', 0);
+
+SELECT id from jogadores ORDER BY id DESC LIMIT 1;

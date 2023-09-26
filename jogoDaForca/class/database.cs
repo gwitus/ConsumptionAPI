@@ -1,48 +1,39 @@
 using System;
-using System.Diagnostics.Contracts;
 using Npgsql;
 
-namespace BD {
+namespace BD
+{
     public class Database
     {
-        private readonly string ConnectionString;
-        public String _url { get; set; }
-        public String _password { get; set; }
-        public String _usernameBD { get; set; }
-        public String _banco { get; set; }
-        public String _door{ get; set; }
+        public string Url { get; set; }
+        public string Password { get; set; }
+        public string UsernameBD { get; set; }
+        public string Banco { get; set; }
+        public string Door { get; set; }
+        public NpgsqlConnection Connection { get; set; }
 
         public Database(string url, string pass, string username, string banco, string door)
         {
-            // dessa forma é mais firula, basicamente vou ter que instanciar e passar os parametros
-            _url = url;
-            _password = pass;
-            _usernameBD = username;
-            _banco = banco;
-            _door = door;
+            Url = url;
+            Password = pass;
+            UsernameBD = username;
+            Banco = banco;
+            Door = door;
 
             // Substitua os valores abaixo pelos seus próprios dados de conexão.
-            ConnectionString = $"Host={_url};Port={_door};Username={_usernameBD};Password={_password};Database={_banco}";
+            var connectionString = $"Host={Url};Port={Door};Username={UsernameBD};Password={Password};Database={Banco}";
+            Connection = new NpgsqlConnection(connectionString);
         }
 
-        public NpgsqlConnection OpenConnection()
+        public void OpenConnection()
         {
-            NpgsqlConnection connection = new NpgsqlConnection(ConnectionString);
-            connection.Open();
-            return connection;
+            Connection.Open();
+            Console.WriteLine($"Conexão com o banco {Banco} efetuada com sucesso!");
+        }
 
-            try
-            {
-                if (connection != null)
-                {
-                    return connection;
-                    Console.WriteLine($"Conexão com o banco {_banco} efetuado com sucesso!");
-                }
-            }
-            catch (System.Exception)
-            {
-                throw;
-            }            
+        public void CloseConnection()
+        {
+            Connection.Close();
         }
     }
 }
