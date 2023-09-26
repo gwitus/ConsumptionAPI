@@ -66,4 +66,11 @@ class Principal
                 Console.Write("\n\nErro no ID (database ou código) - validar!!");
             }
         }
+
+
+
+
+        public static String GerarPalavra(String aux){
+            return aux;
+        }
 }
