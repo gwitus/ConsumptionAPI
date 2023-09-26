@@ -47,10 +47,19 @@ class Principal
             var resultOfSearchID = searchID.ExecuteScalar();
 
             if (resultOfSearchID != null){
-                // Forma preguiçosa de comandos sql, o Npgsql tem mais funcionalidades e ainda mais fácil
+                // Forma preguiçosa de comandos sql, o Npgsql tem mais funcionalidades e ainda mais fáceis
                 // Mas quis treinar como se fosse statement do java, uma coisa de cada vez
-                using var newPlayer = new NpgsqlCommand($"INSERT INTO jogadores(id, nome, placarmax) values ({resultOfSearchID} + 1, '{jogador}', 0);", connection.Connection);
-                Console.WriteLine("Novo Player cadastrado!");
+
+                try
+                {
+                    using var newPlayer = new NpgsqlCommand($"INSERT INTO jogadores(id, nome, placarmax) values ({resultOfSearchID} + 1, '{jogador}', 0);", connection.Connection);
+                    var crudNewPlayer = newPlayer.ExecuteScalar();
+                    Console.WriteLine("Novo Player cadastrado!");
+                }
+                catch (System.Exception)
+                {
+                    throw;
+                }               
             } else {
                 // tenho que partir do pressuposto que sempre tenha algum jogador cadastrado antes, um admin sla,
                 //  se não fodeu minha condicional
