@@ -1,1 +1,0 @@
-Tem que adaptar uma api de palavras aleatórias e trazer para o código!

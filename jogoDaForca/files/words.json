@@ -1,0 +1,160 @@
+{
+    "words": [
+        {
+            "word": "apple",
+            "hint": "a round fruit with a red or green skin"
+        },
+        {
+            "word": "banana",
+            "hint": "a yellow fruit with a curved shape"
+        },
+        {
+            "word": "computer",
+            "hint": "an electronic device for processing data"
+        },
+        {
+            "word": "elephant",
+            "hint": "a large, gray animal with a trunk"
+        },
+        {
+            "word": "guitar",
+            "hint": "a musical instrument with strings"
+        },
+        {
+            "word": "sunflower",
+            "hint": "a tall plant with large yellow flowers"
+        },
+        {
+            "word": "book",
+            "hint": "a collection of pages with writing or pictures"
+        },
+        {
+            "word": "mountain",
+            "hint": "a high, rugged landmass"
+        },
+        {
+            "word": "ocean",
+            "hint": "a vast body of saltwater"
+        },
+        {
+            "word": "camera",
+            "hint": "a device for taking photographs"
+        },
+        {
+            "word": "chocolate",
+            "hint": "a sweet, brown food made from cocoa beans"
+        },
+        {
+            "word": "umbrella",
+            "hint": "a device to protect from rain"
+        },
+        {
+            "word": "dinosaur",
+            "hint": "an extinct reptile from prehistoric times"
+        },
+        {
+            "word": "telescope",
+            "hint": "an optical instrument to observe distant objects"
+        },
+        {
+            "word": "keyboard",
+            "hint": "a set of keys for inputting text or data"
+        },
+        {
+            "word": "firefighter",
+            "hint": "a person who fights fires"
+        },
+        {
+            "word": "helicopter",
+            "hint": "an aircraft with rotating blades"
+        },
+        {
+            "word": "piano",
+            "hint": "a musical instrument with keys"
+        },
+        {
+            "word": "bicycle",
+            "hint": "a vehicle with two wheels"
+        },
+        {
+            "word": "giraffe",
+            "hint": "a tall, long-necked animal"
+        },
+        {
+            "word": "volcano",
+            "hint": "a mountain that erupts with lava and ash"
+        },
+        {
+            "word": "sunglasses",
+            "hint": "eyewear to protect from sunlight"
+        },
+        {
+            "word": "ostrich",
+            "hint": "a large, flightless bird"
+        },
+        {
+            "word": "sandcastle",
+            "hint": "a structure built with sand at the beach"
+        },
+        {
+            "word": "astronaut",
+            "hint": "a person who travels in space"
+        },
+        {
+            "word": "watermelon",
+            "hint": "a juicy, red or pink fruit"
+        },
+        {
+            "word": "cat",
+            "hint": "a small, furry animal often kept as a pet"
+        },
+        {
+            "word": "dog",
+            "hint": "a common domesticated animal known for loyalty"
+        },
+        {
+            "word": "house",
+            "hint": "a building where people live"
+        },
+        {
+            "word": "tree",
+            "hint": "a woody plant with branches and leaves"
+        },
+        {
+            "word": "beach",
+            "hint": "a sandy shore along the ocean"
+        },
+        {
+            "word": "cloud",
+            "hint": "a visible mass of condensed water droplets"
+        },
+        {
+            "word": "flower",
+            "hint": "the reproductive part of a plant"
+        },
+        {
+            "word": "river",
+            "hint": "a natural flowing watercourse"
+        },
+        {
+            "word": "moon",
+            "hint": "the natural satellite of the Earth"
+        },
+        {
+            "word": "star",
+            "hint": "a luminous point in the night sky"
+        },
+        {
+            "word": "bridge",
+            "hint": "a structure built to span a physical obstacle"
+        },
+        {
+            "word": "island",
+            "hint": "a piece of land surrounded by water"
+        },
+        {
+            "word": "train",
+            "hint": "a series of connected vehicles for transportation"
+        }
+    ]
+}

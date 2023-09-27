@@ -16,3 +16,4 @@ C:\Git\GitHub\ConsumptionAPI\jogoDaForca\obj\Debug\net6.0\refint\jogoDaForca.dll
 C:\Git\GitHub\ConsumptionAPI\jogoDaForca\obj\Debug\net6.0\jogoDaForca.pdb
 C:\Git\GitHub\ConsumptionAPI\jogoDaForca\obj\Debug\net6.0\jogoDaForca.genruntimeconfig.cache
 C:\Git\GitHub\ConsumptionAPI\jogoDaForca\obj\Debug\net6.0\ref\jogoDaForca.dll
+C:\Git\GitHub\ConsumptionAPI\jogoDaForca\bin\Debug\net6.0\Newtonsoft.Json.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\weatherForecast.csproj": {}
+    "c:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\weatherForecast.csproj": {}
   },
   "projects": {
-    "C:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\weatherForecast.csproj": {
+    "c:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\weatherForecast.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\weatherForecast.csproj",
+        "projectUniqueName": "c:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\weatherForecast.csproj",
         "projectName": "weatherForecast",
-        "projectPath": "C:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\weatherForecast.csproj",
+        "projectPath": "c:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\weatherForecast.csproj",
         "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\obj\\",
+        "outputPath": "c:\\Git\\GitHub\\ConsumptionAPI\\weatherForecast\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emanu\\AppData\\Roaming\\NuGet\\NuGet.Config"

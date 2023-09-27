@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
 using BD;
+using JsonTratament;
 using Npgsql;
+using JsonTratament;
 
 class Principal
 {
@@ -9,7 +11,8 @@ class Principal
     {
         // variáveis globais
         string nickName;
-
+        jsonConvert jason = new();
+        
         // Conexão
         Database connection = new("127.0.0.1", "1234@", "postgres", "Forca", "5432");
         connection.OpenConnection();
@@ -35,8 +38,9 @@ class Principal
         } else {
             Console.WriteLine($"Bom jogo, {jogador}");
         }
+        jason.carregarPalavras();
         connection.CloseConnection();
-        }
+    }
 
 
         public static void newPlayer(string jogador, Database connection)
@@ -65,12 +69,5 @@ class Principal
                 //  se não fodeu minha condicional
                 Console.Write("\n\nErro no ID (database ou código) - validar!!");
             }
-        }
-
-
-
-
-        public static String GerarPalavra(String aux){
-            return aux;
         }
 }

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Q1Ywy48f6nxJqmAuZA5nxujqovw3DVE6A0sRD+OmTJ1LD0HfyBCM6h8eYZAK+Nsfc0SH/41PYTlA1OAUuwbKiw==",
+  "dgSpecHash": "BwF7CZFUH50AIvJW0imnAmYATqT/R6+rF1m1+y/pxcBZ6tl3DyT1osc5yNLyqYmFZ1c5cKkEnt3nKo8TQROB2g==",
   "success": true,
   "projectFilePath": "C:\\Git\\GitHub\\ConsumptionAPI\\jogoDaForca\\jogoDaForca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emanu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\emanu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\emanu\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
     "C:\\Users\\emanu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
