@@ -28,7 +28,7 @@ namespace BD
         public void OpenConnection()
         {
             Connection.Open();
-            Console.WriteLine($"Conexão com o banco {Banco} efetuada com sucesso!");
+            // Console.WriteLine($"Conexão com o banco '{Banco}' efetuada com sucesso!");
         }
 
         public void CloseConnection()

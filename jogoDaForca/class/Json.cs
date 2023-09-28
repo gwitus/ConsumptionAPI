@@ -11,7 +11,8 @@ namespace JsonTratament {
         // globais 
         private string caminho = "C:/Git/GitHub/ConsumptionAPI/jogoDaForca/files/words.json";
         private List<string> palavraDaVez= new List<String>();
-
+        private List<char> letraDaPalavra = new List<char>();
+        Random random = new();
         // Instanciando classe de leitura de Json
         WordsJson search = new();
 
@@ -23,17 +24,15 @@ namespace JsonTratament {
                 {  
                     // Os atributos vão atuar como variável, não sei se é o certo mas vamos ver como se comporta
                     this.palavra = Convert.ToString(palavra.escrita);
+                    this.dica = Convert.ToString(palavra.dica);
                     // this.dica    = Convert.ToString(palavra.dica);
                     palavraDaVez.Add(Convert.ToString(this.palavra));
-                    
-                    // teste de colletor ok
-                    // Console.WriteLine($"{palavra.escrita}");
                 }
+                // List já preenchida
+                chamarPalavras(palavraDaVez);
             } else {
                 Console.WriteLine("O arquivo JSON não foi encontrado.");
             }
-            Console.WriteLine("Palavras carregadas");
-            chamarPalavras();
         }
 
         public void mostrarPalavras(){
@@ -55,9 +54,32 @@ namespace JsonTratament {
             }
         }
 
-        public void chamarPalavras(){
-            Console.WriteLine("\n\n\n\nLet's go Him");
+        private void chamarPalavras(List<String> cadeiaDePalavras){
+            Console.WriteLine("\n\n\n\nLet's go Him" + "\n\n");
+            // Instanciando algo randomico
+            int indiceAleatorio = random.Next(cadeiaDePalavras.Count);
+            string aux = cadeiaDePalavras[indiceAleatorio];
+            // ToChar para Convert e Tolist manda para a List
+            this.letraDaPalavra = aux.ToCharArray().ToList();
+
+            // Console.WriteLine(aux); -  Funciona
+            int sizeChar = 0;
             
+            foreach (char indice in this.letraDaPalavra)
+            {
+                // ToArrayChar tava botando para código Ascii, precisei do ToString
+                // Console.Write(Convert.ToString(indice) + ' '); - Print se precisar
+                sizeChar ++;
+            }
+
+            Console.WriteLine($"A nova palavra tem {sizeChar} letras\n\ne a dica é: {this.dica}\n");
+
+            Char[] barLine = new Char[sizeChar];
+            
+            for (int index = 0; index < sizeChar; index++){
+                barLine[index] = '_';
+                Console.Write(barLine[index] + " ");
+            }
         }
     }
 }
