@@ -18,6 +18,7 @@ namespace pessoa {
             // Se o player existir, bem vindo, do contrário cadastra
             if (string.IsNullOrEmpty(Convert.ToString(jogador))){
                 newPlayer(nickJogador, connection);
+                Console.WriteLine($"Bem vindo jogador {nickJogador}" + " :)");
             } else {
                 Console.WriteLine($"\n\nBem vindo jogador {jogador}" + " :)");
                 Console.WriteLine($"\nSeu placar atual é de: {placarDoJogador}");

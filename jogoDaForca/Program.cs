@@ -5,6 +5,7 @@ using JsonTratament;
 using Npgsql;
 using JsonTratament;
 using pessoa;
+using System.Runtime.InteropServices;
 
 class Principal
 {
@@ -12,14 +13,35 @@ class Principal
     {
         Jogador jogador = new();
         jsonConvert jason = new();
-        Console.Write("Bem vindo ao Jogo da Forca\nInsira seu nickname: ");
-        jogador.nickName = Convert.ToString(Console.ReadLine());
+        Console.Write("__**Bem vindo ao Jogo da Forca**__");
+        Console.Write("\nInsira seu nick:  ");
 
-        if (string.IsNullOrEmpty(jogador.nickName))
+        // Construção do 'menu'
+
+        while (true)
         {
-            Console.WriteLine("O nickname não pode ser nulo!!");
-        } else {
-            jogador.verificarLogin(jogador.nickName);
+            // Final do loop
+            jogador.nickName = Convert.ToString(Console.ReadLine()).Trim();
+            if (jogador.nickName.Equals("0"))
+            {
+                break;
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(jogador.nickName))
+                {
+                    Console.WriteLine("O nickname não pode ser nulo!!");
+                    Console.Write("\nInsira um nome válido:  ");
+                    Console.WriteLine("\nQuando desejar sair da aplicação digite '0'");
+                }
+                else
+                {
+                    jogador.verificarLogin(jogador.nickName);
+                    jason.carregarPalavras();
+                    Console.WriteLine("\n\nQuando desejar sair da aplicação digite '0'");
+                }
+            }
+
         }
     }
 }
