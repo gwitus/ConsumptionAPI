@@ -74,6 +74,7 @@ namespace JsonTratament
             // ToChar para Convert e Tolist manda para a List
             this.letraDaPalavra = aux.ToCharArray().ToList();
 
+            // validação da palavra, lembrar de apagar;
             Console.WriteLine(aux);
             int sizeChar = 0;
 
@@ -93,24 +94,39 @@ namespace JsonTratament
                 barLine[index] = '_';
                 Console.Write(barLine[index] + " ");
             }
+            Console.Write("\n");
 
-            char pegaLetra = Convert.ToChar(Console.ReadLine());
             int acertos = 0;
-
-            for (int index = 0; index < barLine.Length; index++)
+            while (true)
             {
-                if (pegaLetra == letraDaPalavra[index])
+                Console.Write("Insira a nova letra: ");
+                char pegaLetra = Convert.ToChar(Console.ReadLine());
+                
+
+                for (int index = 0; index < barLine.Length; index++)
                 {
-                    barLine[index] = letraDaPalavra[index];
-                    acertos ++;
+                    if (pegaLetra == letraDaPalavra[index])
+                    {
+                        barLine[index] = letraDaPalavra[index];
+                        acertos++;
+                    }
+                }
+
+                for (int index = 0; index < barLine.Length; index++)
+                {
+                    Console.Write($"{barLine[index]}");
+                }
+
+
+                Console.WriteLine("\n\n");
+
+                if (acertos > 0)
+                {
+                    Console.WriteLine($"Parabéns, faltam somente {this.letraDaPalavra.Count - acertos} letras");
                 }
             }
 
-            Console.WriteLine(acertos);
 
-            if (acertos > 0){
-                Console.WriteLine($"Parabéns, faltam somente {this.letraDaPalavra.Count - acertos} letras");
-            }
         }
     }
 }
