@@ -2,6 +2,10 @@ using System;
 using Newtonsoft.Json;
 using Words;
 using System.Collections.Generic;
+using BD;
+using Npgsql;
+using pessoa;
+using System.Data;
 
 namespace JsonTratament
 {
@@ -9,7 +13,8 @@ namespace JsonTratament
     {
         public string dica { get; set; }
         public string palavra { get; set; }
-
+        public Database connection = new("127.0.0.1", "1234@", "postgres", "Forca", "5432");        
+        
         // globais 
         private string caminho = "C:/Git/GitHub/ConsumptionAPI/jogoDaForca/files/words.json";
         private List<string> palavraDaVez = new List<String>();
@@ -18,7 +23,8 @@ namespace JsonTratament
         // Instanciando classe de leitura de Json
         WordsJson search = new();
 
-        public void carregarPalavras()
+
+        public void carregarPalavras(Jogador jogador)
         {
             if (File.Exists(caminho))
             {
@@ -33,7 +39,7 @@ namespace JsonTratament
                     palavraDaVez.Add(Convert.ToString(this.palavra));
                 }
                 // List já preenchida
-                chamarPalavras(palavraDaVez);
+                chamarPalavras(palavraDaVez, jogador.nickName);
             }
             else
             {
@@ -64,9 +70,9 @@ namespace JsonTratament
             }
         }
 
-        private void chamarPalavras(List<String> cadeiaDePalavras)
+        private void chamarPalavras(List<String> cadeiaDePalavras, String jogador)
         {
-            Console.WriteLine("\n\n\n\nLet's go Him" + "\n\n");
+            connection.OpenConnection();
             // Instanciando algo randomico
             int indiceAleatorio = random.Next(cadeiaDePalavras.Count);
             // recebe uma palavra aleatória do Json
@@ -85,7 +91,7 @@ namespace JsonTratament
                 sizeChar++;
             }
 
-            Console.WriteLine($"A nova palavra tem {sizeChar} letras\n\ne a dica é: {this.dica}\n");
+            Console.WriteLine($"A nova palavra tem {sizeChar} letras\ne a dica é: {this.dica}\n");
 
             Char[] barLine = new Char[sizeChar];
 
@@ -97,24 +103,31 @@ namespace JsonTratament
             Console.Write("\n");
 
             int acertos = 0;
+            String pegaLetra;
+            using var placarJogadorSQL = new NpgsqlCommand($"SELECT placarmax from jogadores WHERE nome = '{jogador}';", connection.Connection);
+            var placarDoJogador = placarJogadorSQL.ExecuteScalar();
+
+            // Laço infinito
             while (true)
             {
                 Console.Write("Insira a nova letra: ");
-                char pegaLetra = Convert.ToChar(Console.ReadLine());
-                
-
-                for (int index = 0; index < barLine.Length; index++)
+                pegaLetra = Console.ReadLine();
+                // o convert pra char estava atrapalhando meus planos, então gambiarra nele
+                if (pegaLetra.Length != 0)
                 {
-                    if (pegaLetra == letraDaPalavra[index])
+                    for (int index = 0; index < barLine.Length; index++)
                     {
-                        barLine[index] = letraDaPalavra[index];
-                        acertos++;
+                        if (pegaLetra[0] == letraDaPalavra[index])
+                        {
+                            barLine[index] = letraDaPalavra[index];
+                            acertos++;
+                        }
                     }
-                }
 
-                for (int index = 0; index < barLine.Length; index++)
-                {
-                    Console.Write($"{barLine[index]}");
+                    for (int index = 0; index < barLine.Length; index++)
+                    {
+                        Console.Write($"{barLine[index]}");
+                    }
                 }
 
 
@@ -123,6 +136,15 @@ namespace JsonTratament
                 if (acertos > 0)
                 {
                     Console.WriteLine($"Parabéns, faltam somente {this.letraDaPalavra.Count - acertos} letras");
+                }
+
+                // Método para acerto imediato
+                if (acertos == barLine.Count())
+                {
+                    Console.WriteLine($"Parabéns, a palavra era: {aux}");
+                    using var comandoSql = new NpgsqlCommand($"UPDATE jogadores SET placarmax = {placarDoJogador} + 1 WHERE nome = '{jogador}';", connection.Connection);
+                    var executarPlacar = comandoSql.ExecuteScalar();
+                    break;
                 }
             }
 

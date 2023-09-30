@@ -6,9 +6,8 @@ namespace pessoa {
     public class Jogador {
         public string nickName {get; set;}
         public int recorde {get; set;}
-
+        private Database connection = new("127.0.0.1", "1234@", "postgres", "Forca", "5432");
         public void verificarLogin(string nickJogador){
-            Database connection = new("127.0.0.1", "1234@", "postgres", "Forca", "5432");
             connection.OpenConnection();
             // Statement
             using var comandoSql     = new NpgsqlCommand($"SELECT nome from jogadores WHERE nome = '{nickJogador}';", connection.Connection);
@@ -20,8 +19,7 @@ namespace pessoa {
                 newPlayer(nickJogador, connection);
                 Console.WriteLine($"Bem vindo jogador {nickJogador}" + " :)");
             } else {
-                Console.WriteLine($"\n\nBem vindo jogador {jogador}" + " :)");
-                Console.WriteLine($"\nSeu placar atual é de: {placarDoJogador}");
+                Console.WriteLine($"\n\nBem vindo jogador {jogador}" + " :)" + $"  Seu placar é de {placarDoJogador}");
             }
         }
         
@@ -48,6 +46,12 @@ namespace pessoa {
                 //  se não fodeu minha condicional
                 Console.Write("\n\nErro no ID (database ou código) - validar!!");
             }
+        }
+
+        public void verPlacar(string nomeJogador){
+            using var comandoRecorde = new NpgsqlCommand($"SELECT placarmax from jogadores WHERE nome = '{nomeJogador}';", connection.Connection);
+            var executarPlacar = comandoRecorde.ExecuteScalar();
+            Console.WriteLine($"O placar de {nomeJogador} é {executarPlacar}");
         }
     }
 }
