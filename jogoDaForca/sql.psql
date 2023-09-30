@@ -6,3 +6,5 @@ select * from jogadores;
 INSERT INTO jogadores(id, nome, placarmax) values (1 + 1, 'TESTE', 0);
 
 SELECT id from jogadores ORDER BY id DESC LIMIT 1;
+
+UPDATE jogadores SET placarmax = 1 + 1 WHERE nome = 'gwitus'
