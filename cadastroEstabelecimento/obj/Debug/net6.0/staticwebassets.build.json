@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "whTXJ4AacjLPgmdtzdQe4FwnRdiUtsNS81NnH7v2lcg=",
+  "Source": "cadastroEstabelecimento",
+  "BasePath": "_content/cadastroEstabelecimento",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "cadastroEstabelecimento\\wwwroot",
+      "Source": "cadastroEstabelecimento",
+      "ContentRoot": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
+      "BasePath": "_content/cadastroEstabelecimento",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

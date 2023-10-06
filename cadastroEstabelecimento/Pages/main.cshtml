@@ -1,0 +1,23 @@
+@* Tem que acessar a page pela url carai *@
+
+@page
+@model cadastroEstabelecimento.Pages.main
+@{
+    ViewData["Title"] = "gwitus";
+    Layout = null;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData</title>
+</head>
+    <body>
+        <h2>Deu certo o Link do main!</h2>
+        @Model.teste
+    </body>
+</html> 
