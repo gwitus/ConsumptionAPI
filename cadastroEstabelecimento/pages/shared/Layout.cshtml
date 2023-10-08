@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <style>
+        *{
+            font-size:  67.5%;
+        }
+
+        p,a {
+            font-size: 2rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: auto;
+            gap: 3rem;
+            background-color: rgb(197, 197, 255);
+        }
+    </style>
+</head>
+    <header>
+        
+    </header>
+    <body>
+        @* 
+        o comando abaixo serve para indicar onde o conteúdo da página
+        que chama o layout comum será renderizado - isto é - se eu quiser
+        que o que seja mudado sera o body então nele, no Header...
+         *@
+
+        
+        @RenderBody()
+        <div><a href="~/about">entrar no about</a></div>
+        <p>hello, World!</p>
+    </body>
+</html>

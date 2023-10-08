@@ -15,10 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Git\GitHub\ConsumptionAPI\cadastroEstabelecimento
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Git/GitHub/ConsumptionAPI/cadastroEstabelecimento/Pages/main.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWFpbi5jc2h0bWw=
+[C:/Git/GitHub/ConsumptionAPI/cadastroEstabelecimento/pages/about.cshtml]
+build_metadata.AdditionalFiles.TargetPath = cGFnZXNcYWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Git/GitHub/ConsumptionAPI/cadastroEstabelecimento/Pages/Shared/_layoutDefault.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9sYXlvdXREZWZhdWx0LmNzaHRtbA==
+[C:/Git/GitHub/ConsumptionAPI/cadastroEstabelecimento/pages/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = cGFnZXNcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/GitHub/ConsumptionAPI/cadastroEstabelecimento/pages/shared/Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = cGFnZXNcc2hhcmVkXExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

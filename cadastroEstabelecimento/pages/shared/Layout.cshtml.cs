@@ -6,21 +6,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace cadastroEstabelecimento.Pages
+namespace cadastroEstabelecimento.pages.shared
 {
-    public class main : PageModel
+    public class Layout : PageModel
     {
-        private readonly ILogger<main> _logger;
-        public string teste;
+        private readonly ILogger<Layout> _logger;
 
-        public main(ILogger<main> logger)
+        public Layout(ILogger<Layout> logger)
         {
             _logger = logger;
         }
 
         public void OnGet()
         {
-            teste = $"horário{DateTime.Now}";
         }
     }
 }
