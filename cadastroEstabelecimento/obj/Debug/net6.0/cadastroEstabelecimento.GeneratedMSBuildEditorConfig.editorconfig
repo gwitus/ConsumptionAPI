@@ -8,21 +8,21 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = cadastroEstabelecimento
 build_property.RootNamespace = cadastroEstabelecimento
-build_property.ProjectDir = C:\Git\GitHub\ConsumptionAPI\cadastroEstabelecimento\
+build_property.ProjectDir = C:\GIT\GitHub\ConsumptionAPI\cadastroEstabelecimento\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Git\GitHub\ConsumptionAPI\cadastroEstabelecimento
+build_property.MSBuildProjectDirectory = C:\GIT\GitHub\ConsumptionAPI\cadastroEstabelecimento
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Git/GitHub/ConsumptionAPI/cadastroEstabelecimento/pages/about.cshtml]
-build_metadata.AdditionalFiles.TargetPath = cGFnZXNcYWJvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Git/GitHub/ConsumptionAPI/cadastroEstabelecimento/pages/index.cshtml]
+[C:/GIT/GitHub/ConsumptionAPI/cadastroEstabelecimento/pages/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = cGFnZXNcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Git/GitHub/ConsumptionAPI/cadastroEstabelecimento/pages/shared/Layout.cshtml]
+[C:/GIT/GitHub/ConsumptionAPI/cadastroEstabelecimento/pages/Produtos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = cGFnZXNcUHJvZHV0b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GIT/GitHub/ConsumptionAPI/cadastroEstabelecimento/pages/shared/Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = cGFnZXNcc2hhcmVkXExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

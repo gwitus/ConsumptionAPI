@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HYA8y6MY6VjJIwoF6YcAZIFQ0jw9fv2hdr+MI0rIwxw=",
+  "Hash": "FZQdzXWymfMiuA0V6cBOcJSGPqOreQk2LsIew8AIVT8=",
   "Source": "cadastroEstabelecimento",
   "BasePath": "_content/cadastroEstabelecimento",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "cadastroEstabelecimento\\wwwroot",
       "Source": "cadastroEstabelecimento",
-      "ContentRoot": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
+      "ContentRoot": "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
       "BasePath": "_content/cadastroEstabelecimento",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\index.html",
+      "Identity": "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\index.html",
       "SourceId": "cadastroEstabelecimento",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
+      "ContentRoot": "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
       "BasePath": "_content/cadastroEstabelecimento",
       "RelativePath": "index.html",
       "AssetKind": "All",

@@ -2,40 +2,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-
-    <style>
-        *{
-            font-size:  67.5%;
-        }
-
-        p,a {
-            font-size: 2rem;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: auto;
-            gap: 3rem;
-            background-color: rgb(197, 197, 255);
-        }
-    </style>
+    <title>SUPERMERCADO 2 IRMÃOS</title>
+    <!--Ao puxar o Css se lembre de não referenciar os diretórios, nesse caso 
+    não referenciar a wwwroot-->
+    <link rel="stylesheet" href="~/css/Layout.css">
 </head>
     <header>
-        
+        <div class="container">
+            <div id="temperatura"></div>
+                <div id="main"><SPAN>CADASTRO 2 IRMÃOS</SPAN></div>
+            <div id="jogoDaForca"></div>
+        </div>
     </header>
     <body>
-        @* 
-        o comando abaixo serve para indicar onde o conteúdo da página
-        que chama o layout comum será renderizado - isto é - se eu quiser
-        que o que seja mudado sera o body então nele, no Header...
-         *@
-
-        
         @RenderBody()
-        <div><a href="~/about">entrar no about</a></div>
-        <p>hello, World!</p>
+
+        <a href="../Produtos">Produtos</a>
+        <a href="../index">index</a>
     </body>
 </html>
