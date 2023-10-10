@@ -1,4 +1,3 @@
-using System.Reflection.Emit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +8,17 @@ using Microsoft.Extensions.Logging;
 
 namespace cadastroEstabelecimento.pages
 {
-    public class index : PageModel {
-        public int teste = 0;
+    public class Produtos : PageModel
+    {
+        private readonly ILogger<Produtos> _logger;
+
+        public Produtos(ILogger<Produtos> logger)
+        {
+            _logger = logger;
+        }
+
         public void OnGet()
         {
-            Console.WriteLine($"Cada um com seus problems! {teste}");
         }
     }
 }
