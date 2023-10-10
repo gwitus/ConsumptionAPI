@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,23 @@
     não referenciar a wwwroot-->
     <link rel="stylesheet" href="~/css/Layout.css">
 </head>
-    <header>
-        <div class="container">
-            <div id="temperatura"></div>
-                <div id="main"><SPAN>CADASTRO 2 IRMÃOS</SPAN></div>
-            <div id="jogoDaForca"></div>
+<header>
+    <div class="container">
+        <div id="main"><SPAN>SUPERMERCADO 2 IRMÃOS</SPAN></div>
+    </div>
+    <div id="adressLink">
+        <div id="contentAdressLink">
+            <div class="linkRazorPages"><a href="../index">PROMOÇÕES</a></div>
+            <div class="linkRazorPages"><a href="../Produtos">ENDEREÇOS</a></div>
+            <div class="linkRazorPages"><a href="">CATOLOGO</a></div>
+            <div class="linkRazorPages"><a href="">INFORMAÇÕES</a></div>
+            <div class="linkRazorPages"><a href="">SUPORTE</a></div>
         </div>
-    </header>
-    <body>
-        @RenderBody()
+    </div>
+</header>
 
-        <a href="../Produtos">Produtos</a>
-        <a href="../index">index</a>
-    </body>
+<body>
+    @RenderBody()
+</body>
+
 </html>

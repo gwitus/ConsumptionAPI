@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FZQdzXWymfMiuA0V6cBOcJSGPqOreQk2LsIew8AIVT8=",
+  "Hash": "gRBBcos/FfAuSKo2PxLEyMSCHDSOk41gMxo/EFSpGAU=",
   "Source": "cadastroEstabelecimento",
   "BasePath": "_content/cadastroEstabelecimento",
   "Mode": "Default",
@@ -10,17 +10,34 @@
     {
       "Name": "cadastroEstabelecimento\\wwwroot",
       "Source": "cadastroEstabelecimento",
-      "ContentRoot": "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
+      "ContentRoot": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
       "BasePath": "_content/cadastroEstabelecimento",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\index.html",
+      "Identity": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\css\\Layout.css",
       "SourceId": "cadastroEstabelecimento",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
+      "ContentRoot": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
+      "BasePath": "_content/cadastroEstabelecimento",
+      "RelativePath": "css/Layout.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Layout.css"
+    },
+    {
+      "Identity": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\index.html",
+      "SourceId": "cadastroEstabelecimento",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
       "BasePath": "_content/cadastroEstabelecimento",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -32,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\model\\2023-10-09 03_34_09-Window.png",
+      "SourceId": "cadastroEstabelecimento",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
+      "BasePath": "_content/cadastroEstabelecimento",
+      "RelativePath": "model/2023-10-09 03_34_09-Window.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\model\\2023-10-09 03_34_09-Window.png"
+    },
+    {
+      "Identity": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\model\\projeto promoçoes - index.png",
+      "SourceId": "cadastroEstabelecimento",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\wwwroot\\",
+      "BasePath": "_content/cadastroEstabelecimento",
+      "RelativePath": "model/projeto promoçoes - index.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\model\\projeto promoçoes - index.png"
     }
   ]
 }

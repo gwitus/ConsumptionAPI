@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\cadastroEstabelecimento.csproj": {}
+    "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\cadastroEstabelecimento.csproj": {}
   },
   "projects": {
-    "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\cadastroEstabelecimento.csproj": {
+    "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\cadastroEstabelecimento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\cadastroEstabelecimento.csproj",
+        "projectUniqueName": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\cadastroEstabelecimento.csproj",
         "projectName": "cadastroEstabelecimento",
-        "projectPath": "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\cadastroEstabelecimento.csproj",
+        "projectPath": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\cadastroEstabelecimento.csproj",
         "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\obj\\",
+        "outputPath": "C:\\Git\\GitHub\\ConsumptionAPI\\cadastroEstabelecimento\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emanu\\AppData\\Roaming\\NuGet\\NuGet.Config"
